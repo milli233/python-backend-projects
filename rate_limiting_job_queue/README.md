@@ -76,6 +76,8 @@ GET /jobs/{job_id}
 ### ➤ Get All jobs for a User
 GET /users/{user_id}/jobs
 
+---
+
 ## 🧵 Concurrency & Safety
 
 - Shared structures protected by locks:
@@ -84,6 +86,8 @@ GET /users/{user_id}/jobs
 - - user_queue
 - Prevents race conditions and inconsistent states
 - FIFO fairness maintained per user
+
+---
 
 ## 📝 Logging
 
@@ -95,6 +99,8 @@ Log levels used:
 - WARNING → invalid lookups
 - ERROR → job execution failures
 
+---
+
 ## 📈 Future Improvements
 
 - Persist jobs using Redis / Database
@@ -103,9 +109,12 @@ Log levels used:
 - Distributed worker support (Celery / RQ)
 - Metrics & monitoring
 
+---
+
 ## 👨‍💻 Author
 
 **Milli Srivastava**
+
 Backend & Systems Enthusiast
 
 ⭐ If you find this useful, feel free to star the repository!
